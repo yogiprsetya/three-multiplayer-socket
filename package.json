@@ -1,7 +1,7 @@
 {
   "name": "three-multiplayer-socket",
   "version": "1.0.0",
-  "description": "",
+  "description": " ",
   "scripts": {
     "start": "nodemon server.js"
   },
