@@ -22,8 +22,11 @@ app.set('view-engine', 'html');
 app.use(express.static(__dirname + '/public'));
 
 /////SOCKET.IO///////
-const io = new Server(server);
-io.origins('*:*'); // for latest version
+const io = new Server(server, {
+  cors: true,
+  origins: '*',
+});
+
 let clients = {};
 
 io.on('connection', (client) => {
